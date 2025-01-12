@@ -120,14 +120,14 @@ body .caixa-principal div a:hover{
     letter-spacing: 0.1rem;
 }
 
-body .caixa-sobre h2{
+body .titulo{
     text-align: center;
     color: var(--white);
     padding: 3.5rem;
     font-size: 4rem;
 }
 
-body .caixa-sobre h2 span{
+body .titulo span{
     color: var(--main-color);
 }
 
@@ -167,11 +167,19 @@ body .caixa-sobre .sobre-container .sobre-texto p{
     padding: 1rem 0;
 }
 
-body .caixa-sobre .modal{
-
+body .modal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px;
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-body .mascara{
+body .mascara-modal{
     visibility: hidden;
     transition: visibility 1s linear;
     z-index: 3;
