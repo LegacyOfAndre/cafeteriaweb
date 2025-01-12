@@ -171,6 +171,13 @@ body .caixa-sobre .modal{
 
 }
 
-body .caixa-sobre .mascara{
-    
+body .mascara{
+    visibility: hidden;
+    transition: visibility 1s linear;
+    z-index: 3;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10,12,16,0.99) 15%,rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85%);
 }
